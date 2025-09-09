@@ -98,20 +98,23 @@ This project provides an end-to-end machine learning solution for predicting myo
 ### 📈 Implemented Algorithms
 
 1. **📊 Logistic Regression** (M3.ipynb)
-   - Linear classification model
-   - Interpretable coefficients
-   - Fast training and prediction
+   - Linear classification model ideal for binary predictions
+   - Provides interpretable coefficients for feature importance
+   - Fast training and prediction suitable for real-time applications
+   - Excellent baseline model for heart disease risk assessment
 
 2. **🧠 Neural Network** (M4.ipynb)
-   - Multi-layer perceptron classifier
-   - Non-linear pattern recognition
-   - Advanced feature learning
+   - Multi-layer perceptron classifier with hidden layers
+   - Capable of learning complex non-linear patterns in medical data
+   - Advanced feature learning through backpropagation
+   - Higher accuracy potential for complex heart disease indicators
 
 3. **🌳 Random Forest** (M5.ipynb)
-   - Ensemble learning method
-   - Feature importance analysis
-   - Robust to overfitting
-   - **Currently deployed in web app**
+   - Ensemble learning method combining multiple decision trees
+   - Provides robust feature importance rankings for medical insights
+   - Handles missing values and overfitting effectively
+   - **Currently deployed in web application** for optimal performance
+   - Excellent balance of accuracy, interpretability, and reliability
 
 ### 🎯 Model Performance
 
@@ -121,13 +124,7 @@ Each model is evaluated using:
 - 📋 **Classification Report**
 - 📈 **ROC Curves** (where applicable)
 
-## 🚀 Installation
-
-### 📋 Prerequisites
-
-- Python 3.8+
-- pip (Python package manager)
-- Git
+## 🚀 Quick Start
 
 ### 🔧 Setup Instructions
 
@@ -145,8 +142,7 @@ Each model is evaluated using:
 
 3. **Install required packages**
    ```bash
-   pip install pandas numpy scikit-learn matplotlib seaborn
-   pip install django jupyter plotly joblib
+   pip install -r requirements.txt
    ```
 
 4. **Set up Django application**
@@ -156,6 +152,21 @@ Each model is evaluated using:
    python manage.py migrate
    python manage.py createsuperuser  # Optional: create admin user
    ```
+
+### ⚡ Quick Demo
+
+**Option 1: Web Application**
+```bash
+cd Deploy/latest
+python manage.py runserver
+# Visit http://127.0.0.1:8000 in your browser
+```
+
+**Option 2: Jupyter Notebooks**
+```bash
+jupyter notebook
+# Open M1.ipynb to start exploring the data science workflow
+```
 
 ## 💻 Usage
 
@@ -210,6 +221,14 @@ The web application features a clean, modern interface with:
 - Clear form layouts
 - Visual feedback for predictions
 - Professional medical styling
+
+#### Screenshots
+
+**Login Page:**
+![Login Interface](docs/images/login-page.png)
+
+**Prediction Interface:**
+![Prediction Form](docs/images/prediction-interface.png)
 
 ## 📓 Jupyter Notebooks
 
